@@ -2,6 +2,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
       <footer className="bg-white h-44 flex flex-col">
+      <div className="flex flex-col">
         <div className="px-4 m-8 h-full flex flex-col justify-between md:flex-row items-center">
                 <div className="flex flex-col m-5">
                   <div className="flex flex-wrap items-center md:items-start">
@@ -42,11 +43,12 @@ export default function Footer() {
                   </div>
                  </div>
              
-                 <div className=" flex items-center justify-center py-4">
-                     <p className="text-center text-gray-600">© 2022 All Rights Reserved</p>
-                 </div>
+                 
           </div>
-        
+                <div className=" flex items-center justify-center py-4 md:flex md:flex-col">
+                     <p className="text-center text-gray-600">© 2022 All Rights Reserved</p>
+                 </div> 
+          </div>
       </footer>
     );
   }
