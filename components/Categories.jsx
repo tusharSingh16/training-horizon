@@ -21,7 +21,7 @@ const categories = [
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4">
           {categories.map((category) => (
-            <div key={category.name} className="text-center p-4 bg-white shadow-xl rounded-xl">
+            <div key={category.name} className="text-center p-4 bg-white hover:shadow-xl shadow-lg rounded-xl">
               <Image src={category.icon} width ={150} height={150} alt={category.name} className="mx-auto mb-2" />
               <p>{category.name}</p>
             </div>
