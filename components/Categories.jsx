@@ -14,14 +14,14 @@ const categories = [
   
   export default function Categories() {
     return (
-      <section className="container mx-auto  w-full py-5 px-6">
+      <section className="mx-auto w-full py-5 px-6">
         <div className="flex flex-wrap justify-between ">
             <h3 className="text-xl font-bold mb-6">Our Top Categories</h3>
             <div className="text-blue-400 text-lg">view all</div>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4  lg:grid-cols-5 gap-4">
           {categories.map((category) => (
-            <div key={category.name} className="text-center  p-4 bg-white shadow-lg rounded-xl hover:shadow-2xl">
+            <div key={category.name} className="text-center p-4 bg-white hover:shadow-xl shadow-lg rounded-xl">
               <Image src={category.icon} width ={150} height={150} alt={category.name} className="mx-auto mb-2" />
               <p>{category.name}</p>
             </div>

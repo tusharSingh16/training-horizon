@@ -1,9 +1,9 @@
 import Link from "next/link";
 export default function Footer() {
     return (
-      <footer className="bg-white  flex flex-col w-full h-full ">
-      <div className="flex flex-col">
-        <div className="px-4 m-8 h-full flex flex-col justify-between md:flex-row items-center">
+      <footer className="bg-white h-44 flex flex-col">
+      <div className="flex bg-white flex-col">
+        <div className="px-4 m-8 h-full flex flex-col bg-white   justify-between md:flex-row items-center">
                 <div className="flex flex-col m-5">
                   <div className="flex flex-wrap items-center md:items-start">
                     <img src="/images/logo.png" alt="Training Horizons Logo" className="w-16 h-16 mb-2" />
@@ -45,7 +45,7 @@ export default function Footer() {
              
                  
           </div>
-                <div className=" flex items-center justify-center m-1 md:flex md:flex-col">
+                <div className=" flex items-center justify-center py-4 md:flex md:flex-col">
                      <p className="text-center text-gray-600">© 2022 All Rights Reserved</p>
                  </div> 
           </div>
