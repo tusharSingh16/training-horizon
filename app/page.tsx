@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-100 w-full h-full overflow-x-hidden'>
       <Head>
         <title>Training Horizons</title>
         <meta name="description" content="Get your skills upgraded with us" />

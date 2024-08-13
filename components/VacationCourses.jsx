@@ -48,22 +48,22 @@ export default function VacationCourses() {
         </div>
 
         <div className="flex flex-col w-full mt-8 md:mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {courses.map((course) => (
               <div
                 key={course.id}
                 className="p-4 rounded-lg bg-white border border-gray-300"
               >
-                <div className="flex flex-col sm:flex-row items-center mb-4">
-                  <div className="bg-blue-400 hidden sm:flex h-40 w-[5px] sm:w-[15px] rounded-r-lg"></div>
+                <div className="flex flex-col lg:flex-row items-center mb-4">
+                  <div className="bg-blue-400 hidden lg:flex h-40 w-[5px] lg:w-[15px] rounded-r-lg"></div>
                   <Image
                     src={course.imageUrl}
                     alt={course.title}
                     width={150}
                     height={150}
-                    className="mb-4 sm:mb-0 sm:ml-3"
+                    className="mb-4 lg:mb-0 lg:ml-3"
                   />
-                  <div className="flex flex-col items-center sm:items-start justify-between ml-0 sm:ml-8 text-center sm:text-left">
+                  <div className="flex flex-col items-center md:items-start justify-between ml-0 md:ml-8 text-center md:text-left">
                     <div className="px-2 py-1 mt-3 mb-3 w-28 flex flex-row text-center bg-blue-400 text-white text-xs rounded-xl">
                       <Image
                         src={course.icon}
@@ -74,11 +74,11 @@ export default function VacationCourses() {
                       />
                       {course.label}
                     </div>
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full">
-                      <h4 className="text-lg sm:text-xl md:text-2xl font-semibold">{course.title}</h4>
-                      <p className="text-sm text-gray-500 sm:ml-4">{course.grade}</p>
+                    <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
+                      <h4 className="text-lg md:text-xl lg:text-2xl font-semibold">{course.title}</h4>
+                      <p className="text-sm text-gray-500 md:ml-4">{course.grade}</p>
                     </div>
-                    <p className="text-gray-600 mb-4 text-sm sm:text-base">{course.description}</p>
+                    <p className="text-gray-600 mb-4 text-sm md:text-base">{course.description}</p>
                     <button className="bg-blue-400 mt-8 mb-5 text-white py-2 px-4 rounded hover:bg-blue-600 shadow-xl">
                       Learn {course.title} with Best Teachers
                     </button>

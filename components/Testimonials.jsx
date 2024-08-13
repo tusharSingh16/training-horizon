@@ -8,7 +8,7 @@ const Testimonial = () => {
     <div className='flex items-start'>
          <h1 className='font-bold  text-xl mb-8'>What our customers say</h1>
     </div>
-    <div className='flex items-center justify-center w-full h-full'>
+    <div className='flex items-center justify-center w-full h-full pr-20'>
     <div className="bg-white mx-auto w-4/5 sm:mx-10 border border-blue-400 md:mx-20 lg:mx-32 xl:mx-48 h-auto md:h-80 my-10 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
       <div className="flex-shrink-0 mb-4 md:mb-0  md:-ml-[100px]">
 
@@ -21,7 +21,7 @@ const Testimonial = () => {
       </div>
       <div className="ml-0 md:ml-6 text-center flex flex-col  md:text-left">
         <div className="flex flex-row justify-between w-full  ">
-            <div className='pt-6'>
+            <div className='pt-6 px-3'>
                <img src='/images/Quote.png' alt='quotes' className='w-8 h-6' />
             </div>
             <div className='md:flex-row pb-8 pr-4'>

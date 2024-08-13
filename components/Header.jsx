@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-gray-100 py-2 shadow">
-      <div className="flex flex-row justify-between items-center py-3 px-6">
+    <header className="bg-gray-100  shadow">
+      <div className="flex flex-row justify-between items-center py-2 px-6">
         
         <nav className="hidden sm:block mx-auto">
           <ul className="flex space-x-6">
